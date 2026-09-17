@@ -13,6 +13,7 @@
   --verdeEscuroNav: #2e7d32;
   --verdeTexto: #c1fab8;
   --preto: #000;
+  --branco: #fff;
   --tamanho-fonte-base: 16px;
 }
 
@@ -113,26 +114,13 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
-  color: var(--verdeTexto);
-}
-
-nav a:hover {
+  color: var(--branco);
   transition: .8s;
 }
 
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #808080;
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
+nav a:hover {
+  font-size: 16px;
+  transition: .8s;
 }
 
 #menu-acc {
